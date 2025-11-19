@@ -5,3 +5,4 @@
 • No recursion at all
 • Document weird part of code and idea itself
 • Use reasonable variable & function names, compiler will optimize it later
+• No GPT, only documentation and forums
