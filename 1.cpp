@@ -34,8 +34,6 @@ SC: O(N)
 
 vector<int> twoSum(vector<int> &nums, int target)
 {
-
-      // idea is to save {target - element : index} and if we took an examlpe [2,7] with target = 9 it will be clear
       unordered_map<int, int> pairs;
       vector<int> result = {-1, -1};
       for (int i = 0; i < nums.size(); i++)
@@ -53,3 +51,13 @@ vector<int> twoSum(vector<int> &nums, int target)
       }
       return result;
 }
+
+/*
+The idea of the algorithm is to search target - nums[i], like in example [2,7] and target = 9
+
+We store in map {9-2: 0} -> {7:0}
+And on second iteration we check if we have key 7, and turns out there is. Return [i and map.get(nums[i])]
+
+Remember, we store in map {target - element: his_index}
+
+*/

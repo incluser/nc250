@@ -53,3 +53,7 @@ string longestCommonPrefix(vector<string> &strs)
       }
       return strs[0].substr(0, stopIndex);
 }
+
+/*
+Idea is simple, we iterate through first string and check his prefix with all other strings and stop when prefix char doesn't match
+*/

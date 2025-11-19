@@ -36,7 +36,7 @@ vector<int> getConcatenation(vector<int> &nums)
       int length = nums.size();
       for (int i = 0; i < length * 2; i++)
       {
-            // % operator helps us remain in range 0:length (included:not_included)
+            // % operator helps us remain in range 0:size() (included:not_included)
             res.push_back(nums[i % length]);
       }
       return res;

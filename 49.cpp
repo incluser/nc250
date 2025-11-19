@@ -69,3 +69,16 @@ vector<vector<string>> groupAnagrams(vector<string> &strs)
       }
       return ans;
 }
+
+/*
+
+Here is the main idea relies on computing key for each string.
+
+{key: vector<anagram_string>}
+
+so our key_builder builds and histogram vector where each integer is like frequency bar and we join them and get unique string between non-anagram strings
+
+cba-abc have same key
+
+
+*/
